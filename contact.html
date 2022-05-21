@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="eaglehub.css">
+	<link rel="stylesheet" href=file:///C:/Users/U.S.E.R/Desktop/fontawesome-free-5.13.0-web/css/all.min.css>
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/U.S.E.R/Desktop/font-awesome-4.7.0/css/font-awesome.min.css">
+	 <style>
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Montserrat:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+</style>
+   <script src="https://use.fontawesome.com/9ebeb5f113.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	
+<style type="text/css">
+  
+nav{height: 80px;
+  background-image: linear-gradient( to  right ,#009ffd,#2a2a72);
+
+
+}
+
+nav img{
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  left: 3%;
+}
+nav ul{
+  float:right;
+  margin-right: 25px;
+
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  position: relative;
+  color:#fff;
+  font-size: 15px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ffa719;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav a.active {
+ border-bottom:2px solid #ffa719;
+  color: #fff;
+  border-radius: 2px;
+
+}
+
+label #btn,
+label #cancel{
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 1118px){
+    nav img{
+      left: 8%;
+
+    }
+}
+
+@media (max-width: 944px){
+    nav img{
+      left: 6%;
+      top: 20px;
+      width: 130px;
+      
+    }
+
+    nav ul li a{
+      font-size: 20px;
+      color: #fff;
+    }
+
+     nav ul li a.active{
+       color: #fff;
+       border-bottom:2px solid #ffa719;
+      
+    }
+}
+
+@media (max-width: 860px){
+  nav{
+    background-image: linear-gradient( to  right ,#009ffd,#2a2a72);
+  }
+   label #btn{
+    display: block;
+    margin-top: -5px;
+    font-size: 25px;
+   }
+
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( to bottom right  , #009ffd,#2a2a72);
+    background:  #2a2a72;
+    top: 64px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 2;
+   }
+
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+   }
+
+    nav ul li a{
+      font-size: 20px;
+    }
+
+     nav ul li a.active{
+       color: #fff;
+       border-bottom:2px solid #fff;
+      
+    }
+
+    nav ul li a:before{
+       background:#ffa719;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+    #check:checked ~ #btn{
+      display: none;
+     }
+
+      #check:checked ~ #cancel{
+      display: block;
+     }
+
+
+.fa-home{
+ display: none;
+}
+.fa-map-marker{
+ display: none;
+}
+.fa-smile-o{
+   display: none;
+}
+.fa-thumbs-up{
+   display: none;
+}
+}
+
+@media screen and (max-width: 600px) {
+   nav img{
+      left: 3%;
+      top: 20px;
+      width: 160px;
+      height: 60px;
+
+    }
+   label #btn{
+    display: block;
+    margin-top: -5px;
+   }
+
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( to bottom right  , #009ffd,#2a2a72);
+    background: #009ffd; 
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+   }
+
+    nav ul li a{
+      font-size: 20px;
+      color: #fff;
+    }
+
+     nav ul li a.active{
+       color: #fff;
+       border-bottom:2px solid #fff;
+      
+    }
+
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+    #check:checked ~ #btn{
+      display: none;
+     }
+
+      #check:checked ~ #cancel{
+      display: block;
+     }
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<nav class="nav">
+	<input type="checkbox" id="check">
+	<label for="check">
+		<i class="fa fa-bars" id="btn"></i>
+		<i class="fas fa-times" id="cancel"></i>
+	</label>
+	<img src="logo eagle hub- white.png">
+	<ul>
+	<li><a href="home.html" ><i class="fa fa-home"></i>Home</a></li>
+	<li><a href="about-us.html" ><i class="fa fa-smile-o"></i>About Us</a></li>
+	<li><a href="contact.html"  class="active"><i class="fa fa-map-marker"></i>contact Us</a></li>
+	<li><a href="our-services.html"><i class="fa fa-thumbs-up"></i>Our Services</a></li>
+   </ul>
+
+</nav>
+
+
+<div class="contact-section">
+  
+   <h1>Tell us what you want</h1>
+   <div class="border"></div>
+   <form class="contact-form" action="contact.html" method="post">
+    <input type="text" class="contact-form-text" id="your-name" placeholder="Your name" required>
+    <input type="email" class="contact-form-text" id="your-email" placeholder="Your email" required>
+    <input type="text" class="contact-form-text" id="your-phone" placeholder="Your phone no." required>
+    <textarea class="contact-form-text" id="your-message" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="send">
+
+
+   </form>
+
+
+</div>
+
+
+    <footer>
+    <div class="footer-grid"> 
+    <div class="footer1">
+    	<h3>Social</h3>
+    	<i class="fa fa-facebook"></i>
+    	<i class="fa fa-whatsapp"></i>
+    	<i class="fa fa-instagram"></i>
+    	<i class="fa fa-twitter"></i>
+    </div>
+    <div class="footer2">
+    	<h3>Get In Touch</h3>
+    	<li>info@eaglehub.com</li>
+    	<li><a href="tel:08141841411">08141841411,</a> <a href="tel:08023149409">08023149409</a></li> 
+    </div>
+    <div class="footer3">
+    	<h3>Eagle hub</h3>
+    	<a href="about-us.html"><li>About</li></a> 
+    	<a href="our-services.html"><li>Branding</li></a>
+    	<a href="our-services.html"><li>Web design and Development</li></a>
+    	<a href="about-us.html"><li>Team</li></a>
+    	<a href="about-us.html"><li>careers</li></a>
+    </div>
+    
+    </div>
+
+    <hr>
+
+    <div class="copy-right">&copy 2020 Eagle Hub. All rights reserved.</div>
+
+
+  </footer>
+
+  
+
+</body>
+</html>
